@@ -97,4 +97,3 @@ export QUANTHAVEN_WEBHOOK_SECRET="your-secret"
 ```
 
 Then send `X-Webhook-Signature: sha256=<digest>` using the raw request body.
-
