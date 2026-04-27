@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quanthaven"
+version = "0.2.0"
+description = "Production-ready EMA crossover backtest, webhook ingestion service, and reporting pipeline."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "brat" }]
+dependencies = [
+  "fastapi>=0.135.2",
+  "uvicorn>=0.42.0",
+  "pydantic>=2.12.5",
+  "pydantic-settings>=2.13.1",
+  "httpx>=0.28.1",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

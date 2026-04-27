@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuantHaven Report</title>
+    <style>
+      :root {
+        --bg: #f7f3ea;
+        --panel: #fffdf8;
+        --ink: #1f2933;
+        --accent: #0f766e;
+        --muted: #52606d;
+        --line: #d9e2ec;
+      }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: radial-gradient(circle at top left, #fff8e7, var(--bg));
+        color: var(--ink);
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+      .hero, .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+      }
+      .hero {
+        padding: 28px;
+        margin-bottom: 24px;
+      }
+      h1, h2 {
+        margin-top: 0;
+      }
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 14px;
+      }
+      .metric {
+        padding: 16px;
+        background: #f2f7f7;
+        border-radius: 14px;
+      }
+      .metric strong {
+        display: block;
+        color: var(--accent);
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+      }
+      .panel {
+        padding: 24px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 12px 10px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        font-size: 0.95rem;
+      }
+      .meta {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="meta">QuantHaven end-to-end signal pipeline</p>
+        <h1>Strategy Report</h1>
+        <div class="metrics">
+          <div class="metric"><strong>Total Return</strong>19.87%</div>
+          <div class="metric"><strong>Win Rate</strong>100.0%</div>
+          <div class="metric"><strong>Max Drawdown</strong>14.25%</div>
+          <div class="metric"><strong>Trades</strong>2</div>
+          <div class="metric"><strong>Sharpe</strong>4.8128</div>
+          <div class="metric"><strong>Signals Logged</strong>1</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Recent Signals</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Symbol</th>
+              <th>Side</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Received At</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>1</td><td>AAPL</td><td>buy</td><td>10</td><td>202.5</td><td>2026-04-27T01:20:45.002211+00:00</td></tr></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

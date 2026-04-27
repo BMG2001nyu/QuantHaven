@@ -1,0 +1,37 @@
+{
+  "config": {
+    "fast_period": 9,
+    "slow_period": 21,
+    "initial_capital": 10000.0,
+    "fee_bps_per_side": 5.0,
+    "slippage_bps_per_side": 5.0,
+    "interval": "1d"
+  },
+  "starting_capital": 10000.0,
+  "ending_capital": 11987.45,
+  "total_return_pct": 19.87,
+  "win_rate_pct": 100.0,
+  "max_drawdown_pct": 14.25,
+  "number_of_trades": 2,
+  "sharpe_ratio": 4.8128,
+  "trades": [
+    {
+      "entry_date": "2024-01-04",
+      "exit_date": "2024-02-09",
+      "entry_price": 101.101,
+      "exit_price": 102.897,
+      "quantity": 98.91099,
+      "pnl": 177.64,
+      "return_pct": 1.78
+    },
+    {
+      "entry_date": "2024-02-29",
+      "exit_date": "2024-03-13",
+      "entry_price": 111.111,
+      "exit_price": 130.869,
+      "quantity": 91.598889,
+      "pnl": 1809.81,
+      "return_pct": 17.78
+    }
+  ]
+}
